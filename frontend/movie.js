@@ -114,7 +114,9 @@ function deleteReview(id) {
     method: 'DELETE'
   }).then(res => res.json())
     .then(res => {
-      console.log(res)
-      location.reload();
-    });    
+      console.log(res);
+      const element = document.getElementById(id);
+      if (element) element.remove();
+    })
+    .catch(err => console.error(err));
 }
