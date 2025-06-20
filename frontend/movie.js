@@ -2,7 +2,7 @@ const url = new URL(location.href);
 const movieId = url.searchParams.get("id")
 const movieTitle = url.searchParams.get("title")
 
-const APILINK = 'https://movie-app-backend-tsb8.onrender.com';
+const APILINK = 'https://movie-app-backend-tsb8.onrender.com/api/v1/reviews/';
 
 
 const main = document.getElementById("section");
